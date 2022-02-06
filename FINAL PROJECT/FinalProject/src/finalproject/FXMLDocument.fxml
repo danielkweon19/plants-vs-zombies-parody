@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" onKeyPressed="#handleKeyPress" prefHeight="677.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.FXMLDocumentController">
+    <children>
+      <ImageView fx:id="backgroundImage" fitHeight="534.0" fitWidth="863.0" onMouseClicked="#deleteActions" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="button" layoutX="20.0" layoutY="14.0" onAction="#handleButtonAction" text="Click to start Game" />
+      
+        <GridPane fx:id="gPane" layoutX="330.0" layoutY="150.0" prefHeight="108.0" prefWidth="150.0">
+            
+        </GridPane>
+      <GridPane fx:id="characterPane" layoutX="45.0" layoutY="150.0" prefHeight="159.0" prefWidth="109.0" />
+      <Pane fx:id="itemPane" layoutX="154.0" layoutY="132.0" prefHeight="84.0" prefWidth="161.0">
+         <children>
+            <Label fx:id="charLabel" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="150.0" />
+            <Label fx:id="charLabel2" layoutX="6.0" layoutY="34.0" prefHeight="17.0" prefWidth="150.0" />
+            <Label fx:id="attackLabel" layoutX="6.0" layoutY="62.0" prefHeight="17.0" prefWidth="150.0" />
+            <ImageView fx:id="logoImage" fitHeight="49.0" fitWidth="56.0" layoutX="100.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+      <ProgressBar fx:id="waveChecker" layoutX="294.0" layoutY="114.0" prefHeight="18.0" prefWidth="337.0" progress="0.0" style="-fx-accent: red;" />
+      <Pane fx:id="powerUpPane" layoutX="294.0" layoutY="20.0" onMouseClicked="#mannaIncreaser" prefHeight="84.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="mannaImage" fitHeight="76.0" fitWidth="88.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="mannaLabel" alignment="CENTER" layoutY="62.0" prefHeight="17.0" prefWidth="100.0" />
+         </children>
+      </Pane>
+      <GridPane fx:id="healthGridPane" layoutX="321.0" layoutY="404.0" prefHeight="96.0" prefWidth="284.0" />
+      <Pane fx:id="statsPane" layoutX="699.0" layoutY="116.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="gameStatsLabel" layoutX="45.0" layoutY="6.0" text="Game Stats" />
+            <Label fx:id="wavesLabel" layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="150.0" />
+            <Label fx:id="villiansKilledLabel" layoutX="2.0" layoutY="64.0" prefHeight="17.0" prefWidth="150.0" />
+            <Label fx:id="unitsKilledLabel" layoutX="-1.0" layoutY="100.0" prefHeight="17.0" prefWidth="150.0" />
+         </children></Pane>
+      <GridPane fx:id="leftGrid" layoutX="331.0" layoutY="414.0" prefHeight="96.0" prefWidth="284.0" />
+      <GridPane fx:id="leftGridPane" layoutX="146.0" layoutY="548.0" prefHeight="108.0" prefWidth="296.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane fx:id="healthLeftPane" prefHeight="96.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="typeLabel" layoutX="13.0" layoutY="40.0" prefHeight="17.0" prefWidth="176.0" />
+                  <Label fx:id="attackShowLabel" layoutX="9.0" layoutY="74.0" prefHeight="17.0" prefWidth="183.0" />
+                  <Label fx:id="label2" layoutX="9.0" layoutY="14.0" prefHeight="17.0" prefWidth="183.0" />
+                  <ImageView fx:id="logoImage1" fitHeight="49.0" fitWidth="56.0" layoutX="85.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Pane fx:id="villiansPane" prefHeight="96.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="typeLabel1" layoutX="13.0" layoutY="40.0" prefHeight="17.0" prefWidth="176.0" />
+                  <Label fx:id="attackShowLabel1" layoutX="9.0" layoutY="74.0" prefHeight="17.0" prefWidth="183.0" />
+                  <Label fx:id="label21" layoutX="9.0" layoutY="14.0" prefHeight="17.0" prefWidth="183.0" />
+                  <ImageView fx:id="logoImage2" fitHeight="32.0" fitWidth="39.0" layoutX="101.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Button fx:id="startButton" layoutX="154.0" layoutY="14.0" mnemonicParsing="false" onAction="#starter" text="Enter Name" />
+      <TextField fx:id="nameTextField" layoutX="25.0" layoutY="522.0" promptText="Enter Name" />
+      <Label fx:id="nameLabel" layoutX="221.0" layoutY="18.0" prefHeight="64.0" prefWidth="448.0" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameResult" layoutX="449.0" layoutY="540.0" prefHeight="17.0" prefWidth="148.0" />
+      <ListView fx:id="listView" layoutX="25.0" layoutY="316.0" prefHeight="200.0" prefWidth="284.0" />
+      <GridPane fx:id="mapSelection" layoutX="20.0" layoutY="296.0" prefHeight="315.0" prefWidth="448.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="map1" fitHeight="318.0" fitWidth="225.0" onMouseClicked="#selectedMap1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="map2" fitHeight="314.0" fitWidth="226.0" onMouseClicked="#selectedMap2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="characterGridPane" layoutX="556.0" layoutY="456.0" prefHeight="108.0" prefWidth="150.0" />
+      <MenuButton fx:id="powerUpMenuBar" layoutX="631.0" layoutY="14.0" mnemonicParsing="false" text="Power Ups">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setPowerUp" text="Increase Attack" />
+          <MenuItem mnemonicParsing="false" onAction="#setPowerUp1" text="Instant Kill" />
+           <MenuItem mnemonicParsing="false" onAction="#setPowerUp2" text="Increase Manna" />
+        </items>
+      </MenuButton>
+      <Label fx:id="powerLabel" layoutX="356.0" layoutY="18.0" prefHeight="17.0" prefWidth="161.0" />
+      <ProgressBar fx:id="powerBar" layoutX="244.0" layoutY="18.0" prefHeight="18.0" prefWidth="56.0" progress="0.0" />
+      <TextArea fx:id="textArea" layoutX="531.0" layoutY="334.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="questionButton" layoutX="318.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#showQuestion" prefHeight="40.0" prefWidth="39.0" text="?" />
+
+        
+    </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Example Unit 11 - add buttons to GridPane at runtime with ActionEvent.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRXhhbXBsZSBVbml0IDExIC0gYWRkIGJ1dHRvbnMgdG8gR3JpZFBhbmUgYXQgcnVudGltZSB3aXRoIEFjdGlvbkV2ZW50LmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkV4YW1wbGUgVW5pdCAxMSAtIGFkZCBidXR0b25zIHRvIEdyaWRQYW5lIGF0IHJ1bnRpbWUgd2l0aCBBY3Rpb25FdmVudDwvdGl0bGU+DQogICAgPHZlbmRvcj5yY29ydGV6PC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgPC9yZXNvdXJjZXM+DQo8c2VjdXJpdHk+DQogIDxhbGwtcGVybWlzc2lvbnMvPg0KPC9zZWN1cml0eT4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJFeGFtcGxlIFVuaXQgMTEgLSBhZGQgYnV0dG9ucyB0byBHcmlkUGFuZSBhdCBydW50aW1lIHdpdGggQWN0aW9uRXZlbnQiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJhZGQuYnV0dG9ucy5ydW50aW1lLkFkZEJ1dHRvbnNSdW50aW1lIiAgbmFtZT0iRXhhbXBsZSBVbml0IDExIC0gYWRkIGJ1dHRvbnMgdG8gR3JpZFBhbmUgYXQgcnVudGltZSB3aXRoIEFjdGlvbkV2ZW50IiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedadd.buttons.runtime() {
+        dtjava.embed(
+            {
+                id : 'add.buttons.runtime',
+                url : 'Example Unit 11 - add buttons to GridPane at runtime with ActionEvent.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRXhhbXBsZSBVbml0IDExIC0gYWRkIGJ1dHRvbnMgdG8gR3JpZFBhbmUgYXQgcnVudGltZSB3aXRoIEFjdGlvbkV2ZW50LmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkV4YW1wbGUgVW5pdCAxMSAtIGFkZCBidXR0b25zIHRvIEdyaWRQYW5lIGF0IHJ1bnRpbWUgd2l0aCBBY3Rpb25FdmVudDwvdGl0bGU+DQogICAgPHZlbmRvcj5yY29ydGV6PC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgPC9yZXNvdXJjZXM+DQo8c2VjdXJpdHk+DQogIDxhbGwtcGVybWlzc2lvbnMvPg0KPC9zZWN1cml0eT4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJFeGFtcGxlIFVuaXQgMTEgLSBhZGQgYnV0dG9ucyB0byBHcmlkUGFuZSBhdCBydW50aW1lIHdpdGggQWN0aW9uRXZlbnQiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJhZGQuYnV0dG9ucy5ydW50aW1lLkFkZEJ1dHRvbnNSdW50aW1lIiAgbmFtZT0iRXhhbXBsZSBVbml0IDExIC0gYWRkIGJ1dHRvbnMgdG8gR3JpZFBhbmUgYXQgcnVudGltZSB3aXRoIEFjdGlvbkV2ZW50IiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedadd.buttons.runtime);
+</script>
+
+</head><body>
+<h2>Test page for <b>Example Unit 11 - add buttons to GridPane at runtime with ActionEvent</b></h2>
+  <b>Webstart:</b> <a href='Example Unit 11 - add buttons to GridPane at runtime with ActionEvent.jnlp' onclick="return launchApplication('Example Unit 11 - add buttons to GridPane at runtime with ActionEvent.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
